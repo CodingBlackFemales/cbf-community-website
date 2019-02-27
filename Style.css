@@ -1,0 +1,14 @@
+div {color:hotpink}
+body {font-family: 'Asap', sans-serif;}
+h1 {
+    margin-left: 200px;
+    text-align: center;
+    font-size: 100px;
+    height: 150px;
+}
+#logo {
+    width: 200px;
+    height:150px;
+    float: left;
+
+}
