@@ -1,0 +1,21 @@
+h1 {
+  color: black;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  width: 60px;
+}
+
+#navbar {
+  border: solid;
+  background-color: purple;
+  padding: 100px;
+}
