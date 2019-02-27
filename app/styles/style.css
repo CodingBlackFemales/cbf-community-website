@@ -1,0 +1,129 @@
+body {font-family:Helvetica, Arial, sans-serif;line-height: 1.3;color:#0f0f0f}
+    #top-line {
+    width: 100%;
+    height: 5px;
+    background-color: #e657bf;
+    border-bottom: 3px solid #eedffb;
+    margin-bottom: 10px;}
+    #bottom-line {
+        width: 100%;
+        height: 5px;
+        background-color: #e657bf;
+        border-top: 3px solid #eedffb;
+        margin-top: 10px;}
+#main {
+    width: 900px;
+    margin: 10px auto 40px;
+    padding: 0;}
+#logo {
+     margin: 0 auto 30px;
+    width: 200px;}
+.ul {list-style: none;
+    display: block;
+    margin: 3px;}
+a {
+color: #3841c5;
+text-decoration: none;
+border-bottom: 1px dotted #a369d5;}
+.pictures {
+margin: 10px auto;
+width: 900px;}
+.pic3 {
+    margin: 10px auto;
+    width: 300px;}
+.pic {
+    margin: 10px auto;
+    width: 250px;}
+.pic2 {
+    margin: 10px auto;
+    width: 350px;}
+.pictures li {
+display: inline;
+margin: 3px;}
+.pictures li img {
+border: 2px solid #b9b1bf;}
+.pictures li:first-child {
+    margin-left: 5px;}
+.right-box {
+    float: right;}
+.left-box {
+    float: left;}
+    h1 {
+        font-size: 39px;
+        color: #126112;
+        text-align: center;
+        border-bottom: 1px solid #f6f4f8;
+        border-top: 1px solid #f6f4f8;
+        padding: 20px 0;}
+      
+      h2 {
+        font-size: 28px;
+        margin: 15px 0;
+        color: #59a7e7;
+        padding: 15px 0;
+        font-weight: 400;
+        text-align: center;}
+    h3 {
+        font-size: 23px;
+        margin: 10px 0;
+        color: #0b2f4d;
+        padding: 15px 0;
+        font-weight: 400;
+        text-align: left;}
+          
+      
+      h4 {
+        color: rgb(219, 26, 26);
+        font-size: 19px;
+        padding: 27px 25px 15px;
+        text-align: center;}
+
+        p {
+         color: rgb(94, 26, 219);
+         font-size: 19px;
+         padding: 27px 25px 15px;
+         text-align: center;}
+      
+      small {
+        color: rgb(219, 26, 26);
+        font-size: 15px;
+        margin: 0 30px 10px;
+        text-align: right;
+        display: block;}
+      
+      ol {
+        margin: 14px 0;}
+      
+      ol li {
+        background-color: #F6F4F8;
+        color: #663095;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 10px 30px 10px 40px;
+        padding: 6px 20px;
+        border-radius: 9px;}
+    #text{
+        background-color: #F6F4F8;
+        color: #663095;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 10px 30px 10px 40px;
+        padding: 6px 20px;
+        border-radius: 9px;}
+     #the-quote{
+        border-bottom: 1px solid #f6f4f8;
+         border-top: 1px solid #f6f4f8;
+         margin: 40px auto;
+        width: 90%;}
+              
+    #links {
+        margin: 10px 15px 0 0;}
+              
+     #links li {
+            margin: 0 7px;
+            font-size: 18px;
+            display: inline;}
+              
+     #text-block {
+                height: 370px;}
+      #p2{text-align: left}
