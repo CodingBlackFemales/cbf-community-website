@@ -12,5 +12,8 @@
       "**/.*",
       "**/node_modules/**"
     ]
+  },
+  "functions": {
+    "predeploy": "npm --prefix functions run build"
   }
 }
