@@ -4,7 +4,7 @@
     "rewrites": [
       {
         "source": "**",
-        "functions": "cbf"
+        "function": "cbf"
       }
     ],
     "ignore": [
@@ -14,6 +14,8 @@
     ]
   },
   "functions": {
-    "predeploy": "npm --prefix functions run build"
+    "predeploy": [
+      "npm --prefix ./functions run lint ."
+    ]
   }
 }
