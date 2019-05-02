@@ -4,7 +4,10 @@ node_js:
 install:
     - npm install -g firebase-tools
 script: 
-    - echo "deploying with Travis"
+    - cd functions
+    - echo "💋💋💋💋💋💋 npm install"
+    - npm install
+    - echo "deploying with Travis 🤞🏿"
 after_success: 
     - firebase deploy --token $FIREBASE_TOKEN
     # safelist
