@@ -14,4 +14,5 @@ after_success:
 branches:
   only:
   - master
-
+notifications:
+  slack: codingblackfemales:uN2qwXmieaKj96R0eB4m4KVm
