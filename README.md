@@ -5,28 +5,39 @@
 ## To test your changes to the website before raising a PR (Pull Request)
 
 ## Prerequisites
-  - node
+  - Node.js (including NPM) - learn more about Node.js [`here`](https://nodejs.org/)
 
-## What if i don't have node installed?
-In the command line (i.e. iTerm or Terminal) TYPE: 
+## Node.js installation
+### How do i know if i have nodeJS installed
 
-    `node -v`
+In your command line terminal (e.g. iTerm or Terminal), TYPE: 
 
+ `node -v`
 
-If you have node installed, it will tell you which version you have installed. ✅
+This should tell you which Node.js version you have installed. ✅
 
-If not, please install it to continue. There are various ways to install node. If you use homebrew, for example TYPE: 
-
-    `brew install node`
-
-You can also download Node.js or pre-built installer [`here`](https://nodejs.org/en/download/)
+If not, please install it to continue. There are various ways to install Node.js 
 
 ----------------------------
-## How to get these files locally
+
+### How to install Node.js
+
+The simplest way is to download Node.js pre-built installer [`here`](https://nodejs.org/en/download/)
+
+
+### Alternatively, you can install from the command line terminal using [`Homebrew`](https://brew.sh/)
+If you use Homebrew, for example TYPE: 
+
+ `brew install node`
+
+In any case, please choose whichever method suits you.
+
+----------------------------
+## How to get these files on your computer so you can work on it locally
 If you have not already done so ...
 Git clone this repo e.g. TYPE: 
 
-    `git clone https://github.com/CodingBlackFemales/cbf-community-website.git`
+ `git clone https://github.com/CodingBlackFemales/cbf-community-website.git`
 
 more info on this from here: [`Git-Basics-Getting-a-Git-Repository`](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 
@@ -34,19 +45,24 @@ more info on this from here: [`Git-Basics-Getting-a-Git-Repository`](https://git
 ## Steps to run to CBF community website locally
 Now for the fun bit 😅 - launching 🚀  the webserver locally 💻 
   
-* In the command line do the following, TYPE:
+In the command line do the following, TYPE:
   
-    `cd functions` - to go into the [`functions/`](https://github.com/CodingBlackFemales/cbf-community-website/blob/master/functions/) folder (change directory)
+* `cd cbf-community-website` - to go into the CBF Community Website project folder
 
-    [`npm install`](https://docs.npmjs.com/cli/install) - to install all the required node modules from [`package.json`](https://github.com/CodingBlackFemales/cbf-community-website/blob/master/functions/package.json)
+* `cd functions` - to go into the [`functions/`](https://github.com/CodingBlackFemales/cbf-community-website/blob/master/functions/) folder
+
+* [`npm install`](https://docs.npmjs.com/cli/install) - to install all the required node modules from [`package.json`](https://github.com/CodingBlackFemales/cbf-community-website/blob/master/functions/package.json)
     
-    `npm run local` - this will launch the website locally
+* `npm run local` - this will launch the website locally
 
-If all went well 🤞🏿 you can now view your local version of cbf community website 🎊
+If all went well 🤞🏿 you can now view your local version of cbf community website here:
  
-## http://localhost:5000
+## http://localhost:5000 🎊
 
-### That's it! Happy coding 💻 👩🏿‍💻
+#### If you have any problems let us know so we can update this README
+
+### That's it! Happy coding black females 
+# 👩🏿‍💻
 
 ## Credits
 
