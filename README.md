@@ -25,8 +25,8 @@ If not, please install it to continue. There are various ways to install Node.js
 The simplest way is to download Node.js pre-built installer [`here`](https://nodejs.org/en/download/)
 
 
-### Alternatively, you can install from the command line terminal using [`Homebrew`](https://brew.sh/)
-If you use Homebrew, for example TYPE: 
+### Alternatively, you can install from the command line terminal using Homebrew
+If you use [`Homebrew`](https://brew.sh/) for example, TYPE: 
 
  `brew install node`
 
@@ -53,13 +53,13 @@ In the command line do the following, TYPE:
 
 * [`npm install`](https://docs.npmjs.com/cli/install) - to install all the required node modules from [`package.json`](https://github.com/CodingBlackFemales/cbf-community-website/blob/master/functions/package.json)
     
-* `npm run local` - this will launch the website locally
+* `npm run local` or `node index.js` - this will launch the website locally
 
 If all went well 🤞🏿 you can now view your local version of cbf community website here:
  
-## http://localhost:5000 🎊
+## http://localhost:3000 🎊
 
-#### If you have any problems let us know so we can update this README
+#### If you have any problems or suggestions let us know so we can update this README
 
 ### That's it! Happy coding black females 
 # 👩🏿‍💻
