@@ -33,4 +33,10 @@ app.get('/home', function (req, res) { // to use /home -> home.html
 });
 // *end*
 
+app.listen(3000, () => {
+    console.log();
+    console.log('\x1b[33m%s\x1b[0m', 'Coding Black Females website:\n');
+    console.log('\x1b[33m%s\x1b[0m', 'http://localhost:3000')
+});
+
 exports.cbf = functions.https.onRequest(app);
