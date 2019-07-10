@@ -1,16 +1,19 @@
 {
   "hosting": {
-    "public": "app",
+    "public": "functions/app",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "cbf"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
+  },
+  "functions": {
+    "predeploy": "npm --prefix functions run"
   }
 }

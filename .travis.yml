@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+    - "10"
+install:
+    - npm install -g firebase-tools
+script: 
+    - cd functions
+    - echo "💋💋💋💋💋💋 npm install"
+    - npm install
+    - echo "deploying with Travis 🤞🏿"
+after_success: 
+    - firebase deploy --token $FIREBASE_TOKEN
+    # safelist
+branches:
+  only:
+  - master
+notifications:
+  slack: codingblackfemales:uN2qwXmieaKj96R0eB4m4KVm
