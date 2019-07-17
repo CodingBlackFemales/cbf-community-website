@@ -82,9 +82,12 @@ Bootstrap theme cloned from Start Bootstrap's [Stylish Portfolio](https://github
 
 #### Are you being prompted to enter your username and password when trying to push to github on your command line? Then follow these steps:
 
-1. On github go to `settings` then click on `developer settings`
+1. On github go to your personal `settings` then click on `developer settings`
 2. Click on the tab `personal access tokens`
 3. Generate a new access token
-4. Remember to save this token somewhere
-5. Go back to your command line and when prompted to enter your password enter the personal access token
-6. Voila!
+4. Click the box for repo when given options
+5. Make sure to enter a note, you can make it something like `Mac terminal`
+6. Scroll to the bottom and click the button `generate new token`
+7. Remember to save this token somewhere safe
+8. Go back to your command line and when prompted to enter your username enter your github username, for your password enter the personal access token we just generated
+9. Voila!
