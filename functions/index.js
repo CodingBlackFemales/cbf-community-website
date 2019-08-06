@@ -6,29 +6,37 @@ const app = express()
 // public folder where public assets are stored
 app.use(express.static('app'))
 
-app.get('/', function (req, res) { // to use /index -> index.html
+app.get('/', function(req, res) { // to use /index -> index.html
     res.sendFile('index.html', { root: __dirname + '/app' })
 });
 
-app.get('/about', function (req, res) { // to use /about -> about.html
+app.get('/about', function(req, res) { // to use /about -> about.html
     res.sendFile('about.html', { root: __dirname + '/app' })
 });
 
-app.get('/contact', function (req, res) { // to use /contact -> home.html
+app.get('/contact', function(req, res) { // to use /contact -> home.html
     res.sendFile('contact.html', { root: __dirname + '/app' })
 });
 
-app.get('/home', function (req, res) { // to use /home -> home.html
-    res.sendFile('home.html', { root: __dirname + '/app' })
+app.get('/blog', function(req, res) { // to use /home -> home.html
+    res.sendFile('blog.html', { root: __dirname + '/app' })
 });
 
-// for firestore testing purposes
-firestoreDb.collection('Event').get().then(snapshot => {
-    console.log('wait for it ...')
-    snapshot.docs.forEach(doc => {
-        console.log(JSON.stringify(doc.data()))
-    });
-})
+app.get('/testimonials', function(req, res) { // to use /home -> home.html
+    res.sendFile('testimonials.html', { root: __dirname + '/app' })
+});
+
+app.get('/workshops', function(req, res) { // to use /home -> home.html
+    res.sendFile('workshops.html', { root: __dirname + '/app' })
+});
+
+// // for firestore testing purposes
+// firestoreDb.collection('Event').get().then(snapshot => {
+//     console.log('wait for it ...')
+//     snapshot.docs.forEach(doc => {
+//         console.log(JSON.stringify(doc.data()))
+//     });
+// })
 
 // for local testing purposes
 app.listen(3000, () => {
