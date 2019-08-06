@@ -16,5 +16,8 @@
         "firebase-admin": "^7.3.0",
         "swig-security-fix": "^2.0.0"
     },
-    "private": true
+    "private": true,
+    "engines": {
+        "node": "8"
+    }
 }
