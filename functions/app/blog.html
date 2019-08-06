@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
@@ -19,7 +18,7 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet" type='text/css'>
 
     <!-- Custom styles for this template -->
     <link href="css/style.cbf.css" rel="stylesheet">
@@ -35,16 +34,16 @@
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="/"><img src="img/cbf_logo.svg" width="150" /></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
+                      Menu
+                      <i class="fas fa-bars"></i>
+                    </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="blog">Blog</a>
+                        <a class="nav-link js-scroll-trigger selected" href="blog">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="testimonials">Testimonials</a>
@@ -60,53 +59,34 @@
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="masthead">
+    <!-- Contact -->
+    <section id="testimonials" class="page-section">
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in"><img src="img/cbf_logo_white.svg" /></div>
-                <!-- <div class="intro-text ">some</div> -->
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Blog</h2>
+                    <h3 class="section-subheading text-muted">Read our stories</h3>
+                </div>
             </div>
-            <p>
-                Our Coding Black Females Community Site!
-            </p>
-        </div>
-    </header>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="medium-widget"></div>
+                    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+                    <script>
+                        MediumWidget.Init({
+                            renderTo: '#medium-widget',
+                            params: {
+                                "resource": "http://medium.com/codingblackfemales",
+                                "postsPerLine": 2,
+                                "limit": 10,
+                                "picture": "big",
+                                "fields": ["description", "author", "claps", "likes", "publishAt"],
+                                "ratio": "landscape"
+                            }
+                        })
+                    </script>
 
-    <!-- Services -->
-    <section id="home">
-        <div class="container">
 
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <a href="https://www.meetup.com/Coding-Black-Females/" target="_blank">
-                        <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-users fa-stack-1x fa-inverse"></i>
-          </span>
-                    </a>
-                    <h4 class="service-heading">Join Us</h4>
-                    <p class="text-muted">Are you a Coding Black Female? Join us, come along to our meetups.</p>
-                </div>
-                <div class="col-md-4">
-                    <a href="blog" target="_blank">
-                        <span class="fa-stack fa-4x">
-                          <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                          <i class="fas fa-blog fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    <h4 class="service-heading">Blog</h4>
-                    <p class="text-muted">Read our blog, find out more about what we're doing and the members of our community.</p>
-                </div>
-                <div class="col-md-4">
-                    <a href="contact">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    <h4 class="service-heading">Get In Touch</h4>
-                    <p class="text-muted">Get in touch if you want to find out more or help to inspire black women in tech.</p>
                 </div>
             </div>
         </div>
@@ -147,7 +127,6 @@
             <span class="copyright">Copyright &copy; Coding Black Females Ltd 2019</span>
         </div>
     </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
