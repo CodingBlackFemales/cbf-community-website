@@ -14,9 +14,22 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:watch": "react-scripts test --watchAll",
+    "test:coverage": "react-scripts test --coverage --watchAll",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook:build": "build-storybook -s public",
+    "lint": "eslint src/**/*.js src/**/*.jsx",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/*.stories.jsx",
+      "!src/serviceWorker.ts",
+      "!**/__fixtures__/**",
+      "!**/node_modules/**"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
