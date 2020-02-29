@@ -1,0 +1,38 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["prettier", "react", "react-hooks"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "camelcase": "off",
+    "curly": "off",
+    "default-case": "error",
+    "dot-notation": "error",
+    "guard-for-in": "error",
+    "indent": "off",
+    "no-bitwise": "error",
+    "no-caller": "error",
+    "no-eval": "error",
+    "no-new-wrappers": "error",
+    "no-shadow": "error",
+    "no-var": "error",
+    "radix": "error"
+  }
+}
