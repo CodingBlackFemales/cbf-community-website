@@ -159,7 +159,7 @@ Contains helper functions, which can be reused across the codebase.
 
 The following libraries are used for unit testing:
 
-- [Jest](https://jestjs.io/)
+- [Jest](https://jestjs.io/) and [Jest Snapshots](https://jestjs.io/docs/en/snapshot-testing)
 - [Enzyme](https://airbnb.io/enzyme/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 
