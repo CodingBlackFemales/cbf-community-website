@@ -9,12 +9,12 @@
   - [2.1. `npm start`](#npmstart)
   - [2.2. `npm run build`](#npmrunbuild)
   - [2.3. `npm test`](#npmtest)
-  - [2.4. `npm run test:coverage`](#npmruntest:coverage)
-  - [2.5. `npm run test:no-watch`](#npmruntest:no-watch)
+  - [2.4. `npm run testcoverage`](#npmruntest:coverage)
+  - [2.5. `npm run testno-watch`](#npmruntest:no-watch)
   - [2.6. `npm run storybook`](#npmrunstorybook)
-  - [2.7. `npm run storybook:build`](#npmrunstorybook:build)
+  - [2.7. `npm run storybookbuild`](#npmrunstorybook:build)
   - [2.8. `npm run lint`](#npmrunlint)
-  - [2.9. `npm run lint:fix`](#npmrunlint:fix)
+  - [2.9. `npm run lintfix`](#npmrunlint:fix)
 - [3. Directory Structure](#DirectoryStructure)
   - [3.1. src Directory Structure](#srcDirectoryStructure)
   - [3.1.1. Component Directory](#ComponentDirectory)
@@ -61,11 +61,11 @@ The build is minified and the filenames include the hashes. The app will also be
 
 Launches the test runner in the interactive watch mode.<br />
 
-#### <a name='npmruntest:coverage'></a>2.4. `npm run test:coverage`
+#### <a name='npmruntestcoverage'></a>2.4. `npm run test:coverage`
 
 Launches the test runner, displaying the test coverage.<br />
 
-#### <a name='npmruntest:no-watch'></a>2.5. `npm run test:no-watch`
+#### <a name='npmruntestno-watch'></a>2.5. `npm run test:no-watch`
 
 Launches the test runner _without_ the interactive watch mode.<br />
 
@@ -73,7 +73,7 @@ Launches the test runner _without_ the interactive watch mode.<br />
 
 Runs Storybook in development mode. Open [http://localhost:9009/](http://localhost:9009/) to view it in the browser. [What is Storybook?](#Storybook)
 
-#### <a name='npmrunstorybook:build'></a>2.7. `npm run storybook:build`
+#### <a name='npmrunstorybookbuild'></a>2.7. `npm run storybook:build`
 
 This will build the storybook configured in the Storybook directory into a static web app and place it inside the `.out` directory. You can deploy the content in the `.out` directory wherever you want.
 
@@ -85,7 +85,7 @@ To test it locally, run `npx http-server .out`
 
 Tests for linting errors in the codebase.
 
-#### <a name='npmrunlint:fix'></a>2.9. `npm run lint:fix`
+#### <a name='npmrunlintfix'></a>2.9. `npm run lint:fix`
 
 Fixes linting and code formatting errors in the codebase.
 
@@ -143,8 +143,8 @@ components
 
 Shared components are components which are used within a variety of others. Each of the folders below, contain subfolders of components. [An example of a component directory](#ComponentDirectory).
 
-- `atoms` - icontains basic HTML elements like headers, form labels, inputs, buttons, and others that can’t be broken down any further.
-- `molecules` - contains atoms combined together to create a component.
+- `atoms` - icontains basic HTML elements like headers, inputs, buttons, icons, and others that can’t be broken down any further.
+- `molecules` - contains atoms combined together to create a component. For example, a button containing an icon.
 - `organisms` - contains atoms and molecules combined to create a component.<br/><br/>
 
 ##### 3.1.2.2. `/utils`
