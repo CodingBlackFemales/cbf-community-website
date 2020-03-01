@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false",
     "test:watch": "react-scripts test --watchAll",
-    "test:coverage": "react-scripts test --coverage --watchAll",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "storybook:build": "build-storybook -s public",
@@ -22,7 +22,7 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "**/*.{js}",
+      "**/*.{jsx, js}",
       "!**/*.stories.jsx",
       "!src/serviceWorker.js",
       "!**/__fixtures__/**",
