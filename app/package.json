@@ -17,7 +17,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "storybook:build": "build-storybook -s public",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint 'src/**/*.{js,jsx}'",
     "lint:fix": "npm run lint -- --fix"
   },
   "jest": {
