@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title matches the snapshot, when the label and tagline props exist 1`] = `
+<DocumentFragment>
+  .c0 {
+  text-align: center;
+}
+
+.c0 .title__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 .title__label-text {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0.2em;
+}
+
+.c0 .title__tagline-text {
+  margin-top: 0.2em;
+  font-weight: 400;
+}
+
+<div
+    class="c0"
+  >
+    <header
+      class="title__header"
+    >
+      <h1
+        class="title__label-text"
+      >
+        A title
+      </h1>
+      <p
+        class="title__tagline-text"
+      >
+        A tagline
+      </p>
+    </header>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Title matches the snapshot, when the label prop exists and the tagline does not exist 1`] = `
+<DocumentFragment>
+  .c0 {
+  text-align: center;
+}
+
+.c0 .title__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 .title__label-text {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0.2em;
+}
+
+.c0 .title__tagline-text {
+  margin-top: 0.2em;
+  font-weight: 400;
+}
+
+<div
+    class="c0"
+  >
+    <header
+      class="title__header"
+    >
+      <h1
+        class="title__label-text"
+      >
+        A title
+      </h1>
+    </header>
+  </div>
+</DocumentFragment>
+`;

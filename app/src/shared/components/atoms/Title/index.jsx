@@ -6,8 +6,8 @@ const Title = ({ label, tagline = null, className }) => {
   return (
     <div className={(classPrefix, className)}>
       <header className={`${classPrefix}__header`}>
-        <h1>{label}</h1>
-        {tagline && <p>{tagline}</p>}
+        <h1 className={`${classPrefix}__label-text`}>{label}</h1>
+        {tagline && <p className={`${classPrefix}__tagline-text`}>{tagline}</p>}
       </header>
     </div>
   );
@@ -17,14 +17,21 @@ const StyledTitle = styled(Title)`
   text-align: center;
 
   .title__header {
-    background-color: #282c34;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  }
+
+  .title__label-text {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 0.2em;
+  }
+
+  .title__tagline-text {
+    margin-top: 0.2em;
+    font-weight: 400;
   }
 `;
 
