@@ -1,68 +1,236 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Coding Black Females (website redesign)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+<!-- vscode-markdown-toc -->
 
-### `npm start`
+- [1. About](#About)
+- [2. Available Scripts](#AvailableScripts)
+  - [2.1. `npm start`](#npmstart)
+  - [2.2. `npm run build`](#npmrunbuild)
+  - [2.3. `npm test`](#npmtest)
+  - [2.4. `npm run test:coverage`](#npmruntest:coverage)
+  - [2.5. `npm run test:no-watch`](#npmruntest:no-watch)
+  - [2.6. `npm run storybook`](#npmrunstorybook)
+  - [2.7. `npm run storybook:build`](#npmrunstorybook:build)
+  - [2.8. `npm run lint`](#npmrunlint)
+  - [2.9. `npm run lint:fix`](#npmrunlint:fix)
+- [3. Directory Structure](#DirectoryStructure)
+  - [3.1. src Directory Structure](#srcDirectoryStructure)
+  - [3.1.1. Component Directory](#ComponentDirectory)
+  - [3.1.2. Shared directory](#Shareddirectory)
+- [4. Tests](#Tests)
+  - [4.1. Unit Tests](#UnitTests)
+- [5. Storybook](#Storybook)
+- [6. Linting](#Linting)
+- [7. Styled Components and CSS](#StyledComponentsandCSS)
+- [8. Pre-commit & Pre-Push Checks](#Pre-commitPre-PushChecks)
+- [9 Learn More About Create-React-App](#LearnMoreAboutCreate-React-App)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## <a name='About'></a>1. About
+
+This project is a redesign of the [Coding Black Females](https://codingblackfemales.com) website, using React (bootstrapped with [Create React App](https://github.com/facebook/create-react-app)).
+
+- node version: 12.13.0
+- npm version: 6.12.0 or above
+
+## <a name='AvailableScripts'></a>2. Available Scripts
+
+In the project, you can run:
+
+#### <a name='npmstart'></a>2.1. `npm start`
+
+Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page will reload if you make edits. You will also see any lint errors in the console.
+
+#### <a name='npmrunbuild'></a>2.2. `npm run build`
+
+Builds the app for production to the `build` directory. It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes. The app will also be ready to deploy. [View docs about deployment](https://facebook.github.io/create-react-app/docs/deployment).
+
+#### <a name='npmtest'></a>2.3. `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### <a name='npmruntest:coverage'></a>2.4. `npm run test:coverage`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Launches the test runner, displaying the test coverage.<br />
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### <a name='npmruntest:no-watch'></a>2.5. `npm run test:no-watch`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Launches the test runner _without_ the interactive watch mode.<br />
 
-### `npm run eject`
+#### <a name='npmrunstorybook'></a>2.6. `npm run storybook`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Runs Storybook in development mode. Open [http://localhost:9009/](http://localhost:9009/) to view it in the browser. [What is Storybook?](#Storybook)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### <a name='npmrunstorybook:build'></a>2.7. `npm run storybook:build`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This will build the storybook configured in the Storybook directory into a static web app and place it inside the `.out` directory. You can deploy the content in the `.out` directory wherever you want.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To test it locally, run `npx http-server .out`
 
-## Learn More
+[What is Storybook?](#Storybook)
+
+#### <a name='npmrunlint'></a>2.8. `npm run lint`
+
+Tests for linting errors in the codebase.
+
+#### <a name='npmrunlint:fix'></a>2.9. `npm run lint:fix`
+
+Fixes linting and code formatting errors in the codebase.
+
+---
+
+## <a name='DirectoryStructure'></a>3. Directory Structure
+
+### <a name='srcDirectoryStructure'></a>3.1. src Directory Structure
+
+```
+📦src
+ ┣ 📂App
+ ┣ 📂shared
+ ┃ ┣ 📂components
+ ┃ ┃ ┣ 📂atoms
+ ┃ ┃ ┣ 📂molecules
+ ┃ ┃ ┗ 📂organisms
+ ┃ ┗ 📂utils
+```
+
+- The `src` directory consists of the `shared` folder, and separate folders for larger components, such as the `App` component.<br/><br/>
+
+#### <a name='ComponentDirectory'></a>3.1.1. Component Directory
+
+e.g. The `App` directory
+
+```
+App
+ ┣ __tests__
+ ┃ ┣ __snapshots__
+ ┃ ┃ ┗ index.test.js.snap
+ ┃ ┗ index.test.js
+ ┣ App.stories.jsx
+ ┗ index.jsx
+```
+
+- `index.jsx` contains the component.
+- `App.stories.jsx` is the storybook file for the component.
+- `__tests__` contains the unit tests for the component, and the directory `__snapshots__`, which is automatically generated by snapshot tests.
+
+- The main components are contained within the `src` directory. An example of this is the `App` directory.<br/><br/>
+
+#### <a name='Shareddirectory'></a>3.1.2. Shared directory
+
+- The `shared` directory contains `components` and `utils`.
+
+##### 3.1.2.1. `/components`
+
+```
+components
+ ┣ atoms
+ ┣ molecules
+ ┗ organisms
+```
+
+Shared components are components which are used within a variety of others. Each of the folders below, contain subfolders of components. [An example of a component directory](#ComponentDirectory).
+
+- `atoms` - icontains basic HTML elements like headers, form labels, inputs, buttons, and others that can’t be broken down any further.
+- `molecules` - contains atoms combined together to create a component.
+- `organisms` - contains atoms and molecules combined to create a component.<br/><br/>
+
+##### 3.1.2.2. `/utils`
+
+Contains helper functions, which can be reused across the codebase.
+
+---
+
+## <a name='Tests'></a>4. Tests
+
+### <a name='UnitTests'></a>4.1. Unit Tests
+
+The following libraries are used for unit testing:
+
+- [Jest](https://jestjs.io/)
+- [Enzyme](https://airbnb.io/enzyme/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+
+The tests are located in the `/__tests__` directory, within each component directory and the `/shared/utils` directory. Where possible, each component and helper function should be tested.
+
+To run the tests and test coverage report, check the [available scripts section](#AvailableScripts).
+
+---
+
+## <a name='Storybook'></a>5. Storybook
+
+[Storybook Documentation](https://storybook.js.org/docs/basics/introduction/)
+
+Storybook allows you to create components, and showcase them in an isolated development environment. This is done by creating `**.stories.jsx` files within each component directory.
+
+To run Storybook, check the [available scripts section](#AvailableScripts).
+
+---
+
+## <a name='Linting'></a>6. Linting
+
+The linter used is [ESLint](https://eslint.org/), along with the [Prettier](https://prettier.io/docs/en/) code formatter.
+
+To run the linter, check the [available scripts section](#AvailableScripts).
+
+---
+
+## <a name='StyledComponentsandCSS'></a>7. Styled Components and CSS
+
+CSS is handled using [Styled Components](https://styled-components.com/docs), which allows the CSS for each component to be contained within the same file.
+
+The root directory contains `index.css`.
+
+---
+
+## <a name='Pre-commitPre-PushChecks'></a>8. Pre-commit & Pre-Push Checks
+
+The following checks are automatically triggered by [Husky](https://www.npmjs.com/package/husky), upon actioning `git commit` and `git push`.
+
+- Pre-commit: `npm run lint:fix` & `git add` to fix lint errors. To add a WIP (work in progress) commit, use the following `git commit --no-verify`.
+
+- Pre-push: `npm run test --watchAll=false` is run before actioning the push. If there are failing tests, the push will fail. Fix the tests, and try again.
+
+---
+
+## <a name='LearnMoreAboutCreate-React-App'></a>9 Learn More About Create-React-App
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+#### <a name='CodeSplitting'></a>9.1. Code Splitting
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+#### <a name='AnalyzingtheBundleSize'></a>9.2. Analyzing the Bundle Size
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+#### <a name='MakingaProgressiveWebApp'></a>9.3. Making a Progressive Web App
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+#### <a name='AdvancedConfiguration'></a>9.4. Advanced Configuration
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+#### <a name='Deployment'></a>9.5. Deployment
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+#### <a name='npmrunbuildfailstominify'></a>9.6. `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

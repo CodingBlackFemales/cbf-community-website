@@ -11,10 +11,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false",
-    "test:watch": "react-scripts test --watchAll",
+    "test": "react-scripts test",
+    "test:no-watch": "react-scripts test --watchAll=false",
     "test:coverage": "react-scripts test --coverage --watchAll=false",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "storybook:build": "build-storybook -s public",
     "lint": "eslint 'src/**/*.{js,jsx}'",
@@ -31,17 +30,22 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
+      "pre-commit": "lint-staged",
       "pre-push": "npm run test"
     }
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "npm run lint:fix"
+      "npm run lint:fix",
+      "git add"
     ]
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "engines": {
+    "node": "^12.13.0",
+    "npm": ">=6.12.0"
   },
   "browserslist": {
     "production": [
