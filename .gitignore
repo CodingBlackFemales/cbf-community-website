@@ -73,3 +73,32 @@ node_modules/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# REACT #
+
+# dependencies
+app/node_modules
+app/.pnp
+app.pnp.js
+
+# testing
+app/coverage
+
+# production
+app/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+app/.DS_Store
+app/.env.local
+app/.env.development.local
+app/.env.test.local
+app/.env.production.local
+
+app/npm-debug.log*
+app/storybook/*
