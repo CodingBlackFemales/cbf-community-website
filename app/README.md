@@ -199,9 +199,9 @@ The root directory contains `index.css`.
 
 The following checks are automatically triggered by [Husky](https://www.npmjs.com/package/husky), upon actioning `git commit` and `git push`.
 
-- Pre-commit: `npm run lint:fix` & `git add` to fix lint errors. To add a WIP (work in progress) commit, use the following `git commit --no-verify`.
+- Pre-commit: `npm run lint:fix` to fix lint errors. To add a WIP (work in progress) commit, use the following `git commit --no-verify`.
 
-- Pre-push: `npm run test --watchAll=false` is run before actioning the push. If there are failing tests, the push will fail. Fix the tests, and try again.
+- Pre-push: `npm run test:no-watch` is run before actioning the push. If there are failing tests, the push will fail. Fix the tests, and try again.
 
 ---
 
