@@ -1,12 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Title matches the snapshot, when the label and tagline props exist 1`] = `
+exports[`<TitleWithTagline matches the snapshot, when titleText and taglineText exist 1`] = `
 <DocumentFragment>
-  .c0 {
+  .c1 {
   text-align: center;
 }
 
-.c0 .title__header {
+.c1 .title__text {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0.2em;
+}
+
+.c2 {
+  text-align: center;
+}
+
+.c2 .tagline__text {
+  margin-top: 0.2em;
+  font-weight: 400;
+}
+
+.c0 {
+  text-align: center;
+}
+
+.c0 .title-with-tagline__header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,45 +43,52 @@ exports[`<Title matches the snapshot, when the label and tagline props exist 1`]
   justify-content: center;
 }
 
-.c0 .title__label-text {
-  text-transform: uppercase;
-  font-weight: 300;
-  margin-bottom: 0.2em;
-}
-
-.c0 .title__tagline-text {
-  margin-top: 0.2em;
-  font-weight: 400;
-}
-
 <div
     class="c0"
   >
     <header
-      class="title__header"
+      class="title-with-tagline__header"
     >
-      <h1
-        class="title__label-text"
+      <div
+        class="c1"
       >
-        A title
-      </h1>
-      <p
-        class="title__tagline-text"
+        <h1
+          class="title__text"
+        >
+          A title
+        </h1>
+      </div>
+      <div
+        class="c2"
       >
-        A tagline
-      </p>
+        <p
+          class="tagline__text"
+        >
+          A tagline
+        </p>
+      </div>
     </header>
   </div>
 </DocumentFragment>
 `;
 
-exports[`<Title matches the snapshot, when the label prop exists and the tagline does not exist 1`] = `
+exports[`<TitleWithTagline matches the snapshot, when titleText exists and taglineText does not exist 1`] = `
 <DocumentFragment>
-  .c0 {
+  .c1 {
   text-align: center;
 }
 
-.c0 .title__header {
+.c1 .title__text {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0.2em;
+}
+
+.c0 {
+  text-align: center;
+}
+
+.c0 .title-with-tagline__header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -80,28 +106,21 @@ exports[`<Title matches the snapshot, when the label prop exists and the tagline
   justify-content: center;
 }
 
-.c0 .title__label-text {
-  text-transform: uppercase;
-  font-weight: 300;
-  margin-bottom: 0.2em;
-}
-
-.c0 .title__tagline-text {
-  margin-top: 0.2em;
-  font-weight: 400;
-}
-
 <div
     class="c0"
   >
     <header
-      class="title__header"
+      class="title-with-tagline__header"
     >
-      <h1
-        class="title__label-text"
+      <div
+        class="c1"
       >
-        A title
-      </h1>
+        <h1
+          class="title__text"
+        >
+          A title
+        </h1>
+      </div>
     </header>
   </div>
 </DocumentFragment>

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tagline matches the snapshot, when the label and tagline props exist 1`] = `
+<DocumentFragment>
+  .c0 {
+  text-align: center;
+}
+
+.c0 .tagline__text {
+  margin-top: 0.2em;
+  font-weight: 400;
+}
+
+<div
+    class="c0"
+  >
+    <p
+      class="tagline__text"
+    >
+      A tagline
+    </p>
+  </div>
+</DocumentFragment>
+`;
